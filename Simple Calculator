@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   double FirstNum, SecondNum;
+   char ArithOp;
+
+   cout << "Enter first number:" ;
+   cin >> FirstNum >> SecondNum;
+
+   cout << "Enter the arithmetic operation to be performed ( + - * / ) :" ;
+   cin >> ArithOp;
+
+   switch (ArithOp)
+   {
+    case 1 '+':
+      cout << FirstNum << ArithOp << SecondNum << "=" << FirstNum + SecondNum << endl;
+      break;
+    case 2 '-':
+      cout << FirstNum << ArithOp << SecondNum << "=" << FirstNum - SecondNum << endl;
+      break;
+    case 3 '*':
+      cout << FirstNum << ArithOp << SecondNum << "=" << FirstNum * SecondNum << endl;
+      break;
+    case 4 '/':
+      if(SecondNum == 0.0)
+      {
+         cout << "Divided by zero case" << endl;
+      }
+      else
+      {
+       cout << FirstNum << ArithOp << SecondNum << "=" << FirstNum / SecondNum << endl;
+      }
+      break;
+      
+    default:  
+        cout << Start << endl;
+     } 
+  }
