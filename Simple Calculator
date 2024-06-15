@@ -38,3 +38,54 @@ int main()
         cout << Start << endl;
      } 
   }
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   double FirstNum, SecondNum;
+   char Op;
+
+   cout << "Enter first number:" ;
+   cin >> FirstNum;
+   
+   cout << "Enter second number:" ;
+   cin >> SecondNum;
+
+   cout << "Enter the arithmetic operation to be performed ( + - * / ) :" ;
+   cin >> Op;
+
+   switch (Op)
+   {
+    case 1 : '+';
+      cout << FirstNum << "+" << SecondNum << "=" << (FirstNum + SecondNum) << endl;
+      break;
+    case 2 : '-';
+      cout << FirstNum << "-" << SecondNum << "=" << (FirstNum - SecondNum) << endl;
+      break;
+    case 3 : '*';
+      cout << FirstNum << "*" << SecondNum << "=" << (FirstNum * SecondNum) << endl;
+      break;
+    case 4 : '/';
+      if(SecondNum == 0.0)
+      {
+         cout << "Divided by zero case" << endl;
+      }
+      else
+      {
+       cout << FirstNum << "/" << SecondNum << "=" << (FirstNum / SecondNum) << endl;
+      }
+      break;
+     } 
+  }
