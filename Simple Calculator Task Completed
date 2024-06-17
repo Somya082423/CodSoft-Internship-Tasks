@@ -15,19 +15,20 @@ int main()
    cout << "Enter the arithmetic operation to be performed ( + - * / ) :" ;
    cin >> ArithOp;
 
-   if (ArithOp == '+') {
-        cout << FirstNum << "+" << SecondNum << "=" << FirstNum+SecondNum;
+   if ( ArithOp == '+' ) {
+       cout << FirstNum << "+" << SecondNum << "=" << FirstNum+SecondNum;
    }
-   else if (ArithOp == '-') {
-        cout << FirstNum << "-" << SecondNum << "=" << FirstNum-SecondNum;
+    else if ( ArithOp == '-' ) {
+       cout << FirstNum << "-" << SecondNum << "=" << FirstNum-SecondNum;
    }
-   else if (ArithOp == '*') {
-        cout << FirstNum << "*" << SecondNum << "=" << FirstNum*SecondNum;
+    else if ( ArithOp == '*' ) {
+       cout << FirstNum << "*" << SecondNum << "=" << FirstNum*SecondNum;
    }
-   else if (ArithOp == '/') {
-        cout << FirstNum << "/" << SecondNum << "=" << FirstNum/SecondNum;
+    else if ( ArithOp == '/' ) {
+       cout << FirstNum << "/" << SecondNum << "=" << FirstNum/SecondNum;
    }
-   else{
-         cout << "Invalid Input" ;
+   else {
+       cout << "Invalid Input";
    }
 }
+    
