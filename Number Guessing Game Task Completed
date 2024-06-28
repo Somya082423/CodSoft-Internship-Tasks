@@ -1,0 +1,41 @@
+#include <iostream> 
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main(){
+//SENDS THE RANDOM NUMBER GENERATOR
+srand(time(0));
+
+//GENERATE A RANDOM NUMBER BETWEEN 1 AND 100
+int randomNumber = rand() % 100 + 1;
+
+//INITIALLIZE THE NUMBER OF GUESSES
+int numGuesses = 0;
+
+//START THE GUESSING GAME
+cout << "Let me think of any number between 1 to 100.\n";
+cout<< "Try to guess it.\n";
+
+int guess;
+while(true){
+//GET THE USER'S GUESS
+cout << "what is your guess?";
+cin >> guess;
+
+//INCREMENT IN FOR THE NUMBER OF TIMESTHE USER GUESSES
+numGuesses++;
+
+//CHECK IF THE GUESS IS CORRECT
+if(guess == randomNumber){
+  cout<< "Yayyyy! You got the number right in" << numGuesses << "guesses.\n";
+  break;
+} else if(guess < randomNumber){
+  cout << "Oops! Guess too low, try again.\n";
+} else {
+  cout << "Oops! Guess too high, try again.\n";
+  }
+ }
+return 0;
+}
